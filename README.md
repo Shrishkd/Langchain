@@ -1,1 +1,4 @@
-Generative AI
+#Generative AI
+Embedding
+RAG
+Prompting
