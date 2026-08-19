@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatGoogleGenerativeAI()
+model = ChatGoogleGenerativeAI(model='gemini-3.5-flash')
 
 # detailed way
 template2 = PromptTemplate(
@@ -13,7 +13,7 @@ template2 = PromptTemplate(
 )
 
 # fill the values of the placeholders
-prompt = template2.invoke({'name':'nitish'})
+prompt = template2.invoke({'name':'shrish'})
 
 result = model.invoke(prompt)
 
